@@ -1,0 +1,43 @@
+
+
+.list-item-categorie{
+    background-image: linear-gradient(to bottom, hsl(246,54%,92%) 0%, hsla(0,0%,100%,0) 25%, hsla(0,0%,100%,0) 75%, hsl(246,54%,92%) 100%);
+    height: 100%;
+}
+
+.list-item-categorie svg {
+    height: 2.5rem;
+    display: block;
+    width: auto;
+    margin-bottom: 0.25rem;
+}
+
+.list-item-categorie ul {
+    list-style: none;
+    max-width: 1000px;
+}
+
+.list-item-categorie ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-item-categorie ul li a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0.125rem;
+    transition: width 0.2s ease-in-out,transform 0.2s ease-in-out;
+    background: linear-gradient(45deg,#425fff,#c644fd);
+}
+
+.list-item-categorie ul li a:hover::after {
+    width: 1.5rem;
+    transition: width 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.list-item-categorie ul li a span {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
